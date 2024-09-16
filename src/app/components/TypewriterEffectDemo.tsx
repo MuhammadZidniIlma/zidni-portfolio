@@ -1,8 +1,30 @@
 "use client";
+import React, { useState, useEffect } from "react";
 import { TypewriterEffect } from "../ui/typewriter-effect";
 import MagicButton from "./MagicButton";
+import styles from './TypewriterEffectDemo.module.css'; // Import CSS module
 
 export function TypewriterEffectDemo() {
+  const [showText, setShowText] = useState(false);
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    // Set timer to show text after 1 second
+    const textTimer = setTimeout(() => {
+      setShowText(true);
+    }, 1000); // 1 second
+
+    // Set timer to show button after 2 seconds
+    const buttonTimer = setTimeout(() => {
+      setShowButton(true);
+    }, 1000); // 2 seconds
+
+    return () => {
+      clearTimeout(textTimer);
+      clearTimeout(buttonTimer);
+    };
+  }, []);
+
   const words = [
     {
       text: "Full",
@@ -21,15 +43,18 @@ export function TypewriterEffectDemo() {
       className: "text-blue-500 dark:text-blue-500",
     },
   ];
+
   return (
-    <div className="flex flex-col items-center justify-center ">
-      <p className="text-neutral-200 text-base sm:text-xl md:text-xl lg:text-2xl mb-1 md:mb-4 lg:mb-6">
+    <div className="flex flex-col items-center justify-center">
+      <p className={`${styles.textWrapper} ${showText ? styles.show : ''} text-neutral-200 text-base sm:text-xl md:text-xl lg:text-2xl mb-1 md:mb-4 lg:mb-6`}>
         Hello I`am a Muhammad Zidni Ilma
       </p>
-      <TypewriterEffect words={words}/>
-      <div className="mb-10 md:space-y-0 space-x-0 md:space-x-4 mt-5">
-        <MagicButton title="Show my Skill" position="right" icon={undefined} />
-      </div>
+      {showText && <TypewriterEffect words={words} />}
+      {showButton && (
+        <div className={`${styles.magicButtonWrapper} ${showButton ? styles.show : ''} mb-10 md:space-y-0 space-x-0 md:space-x-4 mt-5`}>
+          <MagicButton title="Show my Skill" position="right" icon={undefined} />
+        </div>
+      )}
     </div>
   );
 }

@@ -1,0 +1,19 @@
+/* TypewriterEffectDemo.module.css */
+.textWrapper {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .textWrapper.show {
+    opacity: 1;
+  }
+  
+  .magicButtonWrapper {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .magicButtonWrapper.show {
+    opacity: 1;
+  }
+  

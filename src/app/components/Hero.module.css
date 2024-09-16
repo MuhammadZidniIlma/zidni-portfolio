@@ -1,0 +1,14 @@
+/* Hero.module.css */
+.imageWrapper {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .imageWrapper.show {
+    opacity: 1;
+  }
+  
+  .image {
+    border-radius: 50%;
+  }
+  
