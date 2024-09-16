@@ -5,8 +5,8 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 
 const cardData = [
-  { id: 1, title: "Blog Site", description: "Description 1", imageUrl: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { id: 2, title: "MZI Shop", description: "Description 2", imageUrl: "https://images.unsplash.com/photo-1726266852936-bb4cfcdffaf0?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 1, title: "Blog Site", description: "Description 1", imageUrl: "/images/blog-site2.png" },
+  { id: 2, title: "MZI Shop", description: "Description 2", imageUrl: "/images/mzi-shop.png" },
   { id: 3, title: "Card 3", description: "Description 3", imageUrl: "https://images.unsplash.com/photo-1726082132343-e4dc7400ee44?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
   { id: 4, title: "Card 4", description: "Description 4", imageUrl: "https://images.unsplash.com/photo-1726266852911-ee5f5b49ea0d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
   { id: 5, title: "Card 5", description: "Description 5", imageUrl: "https://images.unsplash.com/photo-1554599205-b25822669f92?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },

@@ -10,39 +10,63 @@ export function CardHoverEffectDemo() {
 }
 export const projects = [
   {
-    title: "Laravel",
-    description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
-  },
-  {
-    title: "Mysql",
-    description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
-  },
-  {
     title: "HTML",
-    description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+    description: "Dasar dari semua halaman web, HTML menyediakan struktur untuk konten di internet.",
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
     title: "CSS",
-    description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+    description: "CSS memungkinkan penataan dan tata letak yang menarik untuk halaman web dengan berbagai desain dan estetika.",
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
-    title: "Tailwind",
-    description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+    title: "Sass",
+    description: "Sass adalah preprocessor CSS yang memperkenalkan fitur-fitur seperti variabel, nesting, dan mixins untuk menulis kode CSS yang lebih efisien dan terorganisir.",
+    link: "https://sass-lang.com/",
+  },
+  {
+    title: "Tailwind CSS",
+    description: "Framework CSS utilitas-first yang memungkinkan pembuatan desain yang responsif dan kustom dengan cepat dan konsisten.",
+    link: "https://tailwindcss.com/",
   },
   {
     title: "JavaScript",
-    description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+    description: "Bahasa pemrograman yang memberikan interaktivitas dan dinamika pada halaman web, mendukung pengembangan aplikasi web modern.",
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    title: "PHP",
+    description: "Bahasa pemrograman server-side yang banyak digunakan untuk membangun aplikasi web dinamis dan sistem manajemen konten.",
+    link: "https://www.php.net/",
+  },
+  {
+    title: "WordPress",
+    description: "Platform CMS yang sangat populer untuk membangun dan mengelola situs web dengan antarmuka yang mudah digunakan dan beragam plugin.",
+    link: "https://wordpress.org/",
+  },
+  {
+    title: "MySQL",
+    description: "Sistem manajemen basis data relasional open-source yang digunakan untuk menyimpan dan mengelola data dalam berbagai aplikasi web.",
+    link: "https://www.mysql.com/",
+  },
+  {
+    title: "Git",
+    description: "Sistem kontrol versi terdistribusi yang membantu dalam melacak perubahan pada kode sumber dan kolaborasi tim pengembangan perangkat lunak.",
+    link: "https://git-scm.com/",
+  },
+  {
+    title: "GitHub",
+    description: "Platform berbasis Git yang menyediakan hosting untuk repositori kode sumber dan alat kolaborasi untuk pengembang perangkat lunak.",
+    link: "https://github.com/",
+  },
+  {
+    title: "Figma",
+    description: "Alat desain antarmuka berbasis web yang memungkinkan kolaborasi real-time dalam pembuatan desain UI/UX dan prototyping.",
+    link: "https://www.figma.com/",
+  },
+  {
+    title: "Laravel",
+    description: "Framework PHP yang mempermudah pengembangan aplikasi web dengan fitur-fitur canggih seperti routing, ORM, dan manajemen sesi.",
+    link: "https://laravel.com/",
   },
 ];
