@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { TypewriterEffect } from "../ui/typewriter-effect";
 import MagicButton from "./MagicButton";
 import styles from './TypewriterEffectDemo.module.css'; // Import CSS module
+import Link from "next/link";
 
 export function TypewriterEffectDemo() {
   const [showText, setShowText] = useState(false);
@@ -52,7 +53,9 @@ export function TypewriterEffectDemo() {
       {showText && <TypewriterEffect words={words} />}
       {showButton && (
         <div className={`${styles.magicButtonWrapper} ${showButton ? styles.show : ''} mb-10 md:space-y-0 space-x-0 md:space-x-4 mt-5`}>
-          <MagicButton title="Show my Skill" position="right" icon={undefined} />
+          <Link href="mailto:m.zidniilma234@gmail.com">
+          <MagicButton title="Let's get in touch" position="right" icon={undefined} />          
+          </Link>
         </div>
       )}
     </div>

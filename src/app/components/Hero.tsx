@@ -18,10 +18,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative h-screen w-full flex items-center justify-center">
+    <div id="home" className="relative h-screen w-full flex items-center justify-center">
       <FloatingNavDemo />
       {/* Gambar kecil dengan ukuran 100px x 100px dan berbentuk lingkaran */}
-      <div className={`${styles.imageWrapper} ${showImage ? styles.show : ''} absolute z-10 top-[180px] lg:top-[150px] md:top-[160px] sm:top-[170px]`}>
+      <div className={`${styles.imageWrapper} ${showImage ? styles.show : ''} absolute z-10 top-[150px] lg:top-[120px] md:top-[150px] sm:top-[160px]`}>
         <Image 
           src={image} 
           alt="Example Image" 

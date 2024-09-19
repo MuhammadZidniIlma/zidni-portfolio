@@ -15,11 +15,11 @@ const cardData = [
 
 export function ThreeDCardDemo() {
   return (
-    <>
+    <div id="projects" className="max-w-full ">
     <div className="flex justify-center mb-10">
-        <h1 className="text-3xl font-bold">My Project</h1>
+        <h1 className="font-bold text-xl md:text-3xl sm:text-2xl lg:text-4xl text-center">A small selection of<span className="text-purple-200">recent projects</span></h1>
     </div>
-    <div className=" w-5/6 mx-auto flex items-center justify-center ">
+    <div className="  mx-auto flex items-center justify-center ">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 row-gap-2">
         {cardData.map((card) => (
           <CardContainer key={card.id} className="flex items-center justify-center">
@@ -66,6 +66,6 @@ export function ThreeDCardDemo() {
         ))}
       </div>
     </div>
-    </>
+    </div>
   );
 }

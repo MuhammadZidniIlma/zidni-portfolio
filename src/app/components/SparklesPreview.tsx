@@ -7,6 +7,8 @@ export function SparklesPreview() {
   return (
     <div className="h-screen relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
       <div className="w-full absolute inset-0 h-screen">
+      <div className="w-full absolute left-0 -bottom-72 min-h-96">                
+      </div>
         <SparklesCore
           id="tsparticlesfullpage"
           background="transparent"
